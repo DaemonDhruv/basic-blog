@@ -1,0 +1,14 @@
+{% extends 'posts/layout.html'%}
+
+{% block content %}
+<h6>{{post.title}}</h6>
+<div class="card">
+  <div class="card-content">
+    {{post.body}}
+  </div>
+  <div class="card-action">
+    {{post.created_at}}
+  </div>
+</div>
+<a href="/posts" class="btn light-blue darken-3">Back</a>
+{% endblock %}
